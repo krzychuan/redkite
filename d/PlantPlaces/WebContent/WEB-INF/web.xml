@@ -21,7 +21,7 @@
   </context-param>
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
-		<param-value>bootstrap</param-value>
+		<param-value>glass-x</param-value>
 	</context-param>
   <listener>
     <listener-class>
