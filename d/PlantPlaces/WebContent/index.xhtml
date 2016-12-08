@@ -17,7 +17,7 @@
 		<em><h:outputLabel value="#{applicationInfo.slogan}"></h:outputLabel></em>		
 		Enter a plant name, and then choose Search.
 		<h:form>
-			<p:inputText value="#{plant.name}"  />
+			<p:autoComplete value="#{plant.name}" completeMethod="#{searchPlants.completePlants}" />
 			<p:commandButton value="Submit" actionListener="#{searchPlants.execute}" />
 		</h:form>
 		<h4>The National Virtual Arboretum and Regional Ornamental Plant Database is 
