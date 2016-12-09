@@ -10,6 +10,7 @@ import javax.inject.Named;
 import org.springframework.context.annotation.Scope;
 
 import com.plantplaces.dto.Plant;
+import com.plantplaces.service.IPlantService;
 
 
 
@@ -20,6 +21,9 @@ public class SearchPlants {
 
 	@Inject
 	private Plant plant;
+	
+	@Inject
+	private IPlantService plantService;
 	
 	public String execute()
 	{
