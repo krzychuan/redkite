@@ -18,4 +18,10 @@ public interface IPlantService {
 	 * @return collection of matching plants.
 	 */
 	public List<Plant> filterPlants(String filter);
+	/**
+	 * Save the plant and perform a validation check.
+	 * @param plant is an dto object to transfer data, in this case about new plant that we are going to persist. 
+	 * @throws Exception if unable to save.
+	 */
+	public void save(Plant plant) throws Exception;
 }

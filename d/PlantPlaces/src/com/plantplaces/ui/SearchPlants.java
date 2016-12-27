@@ -44,13 +44,6 @@ public class SearchPlants {
 	
 	public List<Plant> completePlants(String query)
 	{
-		ArrayList<Plant> allPlants = new ArrayList<Plant>();
-		Plant tulipan = new Plant();
-		tulipan.setName("Tulipan");
-		Plant mimoza = new Plant();
-		mimoza.setName("Mimoza");
-		allPlants.add(tulipan);
-		allPlants.add(mimoza);
-		return allPlants;
+		return plantService.filterPlants(query);
 	}
 }
