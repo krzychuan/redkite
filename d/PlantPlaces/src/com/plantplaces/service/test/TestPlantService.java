@@ -20,6 +20,8 @@ public class TestPlantService extends TestCase{
 	private List<Plant> filterPlants;
 	private IPlantDAO plantDAO;
 
+	//Ka¿da metoda testowa powinna mieæ w nazwie test inaczaj przy próbie wywo³ania
+	//testu w trybie debug otrzymamy ...
 	@Test
 	public void testFilterPlants(){
 		givenThatPlantServicesIsPopulatedWithPlantDAO();

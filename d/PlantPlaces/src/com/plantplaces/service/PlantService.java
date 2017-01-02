@@ -55,9 +55,4 @@ public class PlantService implements IPlantService {
 	public void setPlantDAO(IPlantDAO plantDAO) {
 		this.plantDAO = plantDAO;
 	}
-
-
-
-	
-
 }

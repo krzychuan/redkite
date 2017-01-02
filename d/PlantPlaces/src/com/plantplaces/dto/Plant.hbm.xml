@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="com.plantplaces.dto.Plant" table="plants" catalog="plantplaces">
+    <class name="com.plantplaces.dto.Plant" table="Plants" catalog="PlantPlaces">
         <id name="guid" type="java.lang.Integer">
             <column name="PLANT_ID" />
             <generator class="identity" />

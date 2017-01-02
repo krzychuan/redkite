@@ -6,6 +6,7 @@ import java.util.List;
 import javax.inject.Named;
 
 import org.apache.log4j.Logger;
+import org.hibernate.Session;
 
 import com.plantplaces.dto.Plant;
 
@@ -66,4 +67,21 @@ public class PantDAOStub implements IPlantDAO {
 
 	}
 
+	@Override
+	public List<Plant> fetchPlants(Plant plant) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insert(Session session, Plant plant) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void save(Plant plant) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }
