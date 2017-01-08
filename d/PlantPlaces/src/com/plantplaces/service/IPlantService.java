@@ -24,4 +24,10 @@ public interface IPlantService {
 	 * @throws Exception if unable to save.
 	 */
 	public void save(Plant plant) throws Exception;
+	/**
+	 * Return a list of plants that match the given search criteria
+	 * @param plant a parameter that contains the search criteria
+	 * @return a list of matching plants
+	 */
+	List<Plant> fetchPlants(Plant plant);
 }

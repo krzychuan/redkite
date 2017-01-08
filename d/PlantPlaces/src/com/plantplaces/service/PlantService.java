@@ -1,7 +1,6 @@
 package com.plantplaces.service;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -47,6 +46,12 @@ public class PlantService implements IPlantService {
 		// TODO Auto-generated method stub
 		plantDAO.insert(plant);
 	}
+	@Override
+	public List<Plant> fetchPlants(Plant plant){
+		List<Plant> plants = plantDAO.fetchPlants(plant);
+		return plants;
+	}
+	
 	
 	public IPlantDAO getPlantDAO() {
 		return plantDAO;

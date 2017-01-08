@@ -2,6 +2,8 @@ package com.plantplaces.dao;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.hibernate.Query;
 import org.hibernate.Session;
 
 import com.plantplaces.dto.Plant;
@@ -30,9 +32,9 @@ public class PlantHbmDAO implements IPlantDAO {
 		List<Plant> plantList = new ArrayList<Plant>();
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		// create the query
-		org.hibernate.Query query = session.createQuery("from Plant where common like :common");
-		query.setParameter("common", plant.getCommon());
-		// query.setProperties(plant);
+		org.hibernate.Query query = session.createQuery("from Plant where common = :common");
+		//query.setParameter("common", plant.getCommon()); //Jak definiujenym liniê poni¿ej to tej ju¿ nie potrzebujemy.
+		query.setProperties(plant);
 		plantList = (List<Plant>)query.list();
 		return plantList;
 	}
